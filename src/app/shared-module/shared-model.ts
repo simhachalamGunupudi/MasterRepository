@@ -1,5 +1,6 @@
 export class SharedModel {
   firstName: string;
+  password: string;
 
   constructor() {
 
@@ -8,8 +9,8 @@ export class SharedModel {
   static fromJson(json: any): SharedModel {
     json = json || {};
     const obj = new SharedModel();
-
     obj.firstName = json.firstName || json.firstName || '';
+    obj.password = json.currentPassword || json.currentPassword || '';
     return obj;
   }
 

@@ -14,6 +14,7 @@ export class LoginModuleComponent implements OnInit {
   }
 
   ngOnInit() {
+    alert('haii');
   }
 
 }

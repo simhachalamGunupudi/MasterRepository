@@ -1,8 +1,20 @@
-<div>
-  <input type="text" [(ngModel)]="name" name="name"/>
+<div class="app-login app-change-password">
+  <form #changeForm="ngForm">
+    <div>
+      <label for="Name">Name</label>
+      <input id="Name" type="text" [(ngModel)]="name" name="name"/>
+    </div>
+    <div>
+      <label for="currentPassword">Current Password</label>
+      <input id="currentPassword" name="currentPassword" type="password" required
+             [(ngModel)]="currentPassword">
+    </div>
+
+
+    <button type="submit">
+      Save
+    </button>
+
+  </form>
+
 </div>
-
-
-
-
-

@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 import {LoginModuleModule} from './login-module/login-module.module';
 import {SharedModuleModule} from './shared-module/shared-module.module';
 import {AppComponent} from './app.component';
+import {AppRoutingModule} from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import {AppComponent} from './app.component';
   imports: [
     LoginModuleModule,
     SharedModuleModule,
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

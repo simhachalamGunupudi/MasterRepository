@@ -11,14 +11,16 @@ import {SharedModel} from './shared-model';
 })
 export class SharedModuleComponent implements OnInit {
   name: string;
+  currentPassword: string;
 
   constructor() {
   }
 
   ngOnInit() {
-    const obj: SharedModel = SharedModel.fromJson({firstName: 'simha'});
+    const obj: SharedModel = SharedModel.fromJson({firstName: '', currentPassword: ''});
     console.log(obj);
     this.name = obj.firstName;
+    this.currentPassword = obj.password;
   }
 
 }
