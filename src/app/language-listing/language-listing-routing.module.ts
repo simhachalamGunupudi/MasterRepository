@@ -4,7 +4,10 @@ import {
   RouterModule
 } from '@angular/router';
 import {LanguageListingComponent} from './language-listing.component';
-const routes: Routes = [{path: '', component: LanguageListingComponent}];
+const routes: Routes = [{path: '', component: LanguageListingComponent}, {
+  path: 'language',
+  component: LanguageListingComponent
+}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

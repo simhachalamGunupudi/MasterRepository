@@ -1,6 +1,10 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  async,
+  ComponentFixture,
+  TestBed
+} from '@angular/core/testing';
 
-import { LanguageListingComponent } from './language-listing.component';
+import {LanguageListingComponent} from './language-listing.component';
 
 describe('LanguageListingComponent', () => {
   let component: LanguageListingComponent;
@@ -8,9 +12,9 @@ describe('LanguageListingComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LanguageListingComponent ]
+      declarations: [LanguageListingComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

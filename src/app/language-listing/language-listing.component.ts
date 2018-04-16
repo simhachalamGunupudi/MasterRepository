@@ -1,6 +1,8 @@
 import {
   Component,
-  OnInit
+  OnInit,
+  ViewChild,
+  AfterContentInit
 } from '@angular/core';
 
 @Component({
@@ -8,12 +10,16 @@ import {
   templateUrl: './language-listing.component.html',
   styleUrls: ['./language-listing.component.css']
 })
-export class LanguageListingComponent implements OnInit {
+export class LanguageListingComponent implements OnInit, AfterContentInit {
+  superData: any = [{name: 'kamala'}, {name: 'amrutha'}, {name: 'sanjana'}];
 
   constructor() {
   }
 
   ngOnInit() {
+  }
+
+  ngAfterContentInit() {
   }
 
 }

@@ -1,0 +1,36 @@
+@import "../styles";
+
+//HEADER
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  padding: em(8) 0;
+  align-content: center;
+  background: rgba(255, 255, 255, 0);
+
+  svg:not(.bible-icon) {
+    display: inline-block;
+    width: 111px;
+    fill: currentColor;
+  }
+
+  nav {
+    float: right;
+  }
+
+  ul {
+    display: table-row;
+    height: 50px;
+    align-content: center;
+    li {
+      display: table-cell;
+      vertical-align: middle;
+      padding-right: 40px;
+    }
+  }
+
+}
+
+
+
